@@ -1,0 +1,122 @@
+---
+layout: default
+---
+
+<h1>Panel and Workshop Submission Form</h1>
+<!-- <p>Registration for panels and workshops is now closed. Please attend the convention to see the panels and registration. </p> -->
+<!-- <p>Registration for panels and workshops for CPAC 2015 has not opened yet.</p> -->
+<p>Please fill out this form and submit it once for every panel or workshop which you wish to run.  If you want to run an event once in the morning and then once again in the evening or if you want to run two slightly different events (i.e. wig making for beginners and wig making for advanced cosplayers), then simply fill this form out once for the first event, submit it, update your answers for the second event, and then submit the form a second time.</p>
+<p><b>Please note that Castle Point Anime Convention will not be providing microphones for panels due to the fact that we can not support the quanitity desired.</b></p>
+<p>Fields marked with a * cannot be left blank</p>
+<form action="eventmailer.php" method="post">
+    <p style="position: absolute; left: -9999px;">please leave this first feild blank if you can see this<input type="text" name="fuckgoogle"/></p>
+    <h2>Essential Information:</h2>
+    <p><b>Moderator Name(s):</b><br/>
+	(The person(s) who will run the event.)<br/>
+	<input name="ModeratorName" type="text" size="45"/>*</p>
+	<p><b>Contact Email(s):</b><br/>
+	    Primary: <input name="email" type="text"/>*<br/>
+	    Additional: <input name="extraemails" type="text" size="80"/></p>
+	<p><b>Event type:</b><br/>
+	    (Select whether this is a panel (discussion/general information presentation) or whether this is a workshop (demonstration/step-by-step tutorial).)<br/>
+	    <select name="EventType">
+		<option>Panel</option>
+		<option>Workshop</option>
+	    </select></p>
+	<p><b>Event Title:</b><br/>
+	    (This is the official name of the event, as it would appear in a convention program guide.)<br/>
+	    <input name="EventTitle" type="text" size="45"/>*</p>
+	    <p><b>Event Description:</b><br/>
+		(Please provide a concise description of your event.)<br/>
+		<textarea name="EventDescription" rows="12" cols="80"></textarea>*</p>
+	    <p><b>Event Facilitators:</b><br/>
+		(Particularly for panels, if someone wanted to volunteer to help you run this event (join you as a moderator) would you want the help?)<br/>
+		<select name="HelpRequired">
+		    <option selected="selected">No help (listed moderator(s) only).</option>
+		    <option>Help unnecessary but welcome.</option>
+		    <option>Help wanted.</option>
+		</select></p><br/>
+		<h2>Event Scheduling:</h2>
+		<p>Even though most events will show up as 1 hour long on the convention program schedule, a typical "one hour" event should only actually run for about 50 minutes.  This way, the room can be vacated by 55 minutes in.  This will allow a minimum of 5 minutes between when 1 event vacates a room and the next event starts.  Event moderators will therefore receive a minimum of 5 minutes before the start of their events for setup, because the event before them should have vacated the room 5 minutes before their start time.  Thus, a typical "one hour" event would have a full hour of room time (5 minutes of setup and 50 minutes run time and 5 minutes of room cleanup and clearing time), but it would only be actually running for 50 minutes.  However, there are some events which may require longer setup periods, cleanup periods, and longer or shorter run times.  If so, please specify below.</p>
+		<p><b>Setup Time Required (laptop to projector hookup, demonstration setup, etc.):</b><br/>
+		    <select name="SetupTimeRequired">
+			<option selected="selected">5 minutes</option>
+			<option>10 minutes</option>
+			<option>15 minutes</option>
+			<option>20 minutes</option>
+			<option>30 minutes</option>
+		    </select></p>
+		<p><b>Event Running Time (if your event length falls between 2 options, select the longer one):</b><br/>
+		    <select name="EventRunningTime">
+			<option>20 minutes</option>
+			<option selected="selected">50 minutes</option>
+			<option>1 hour 20 minutes</option>
+			<option>1 hour 50 minutes</option>
+			<option>2 hours 20 minutes</option>
+			<option>2 hours 50 minutes</option>
+		    </select></p>
+		<p><b>Cleanup and Room Clearing Time (if your cleanup time falls between 2 options, select the longer one):</b><br/>
+		    <select name="EventCleanupTime">
+			<option selected="selected">5 minutes</option>
+			<option>10 minutes</option>
+			<option>15 minutes</option>
+			<option>20 minutes</option>
+			<option>30 minutes</option>
+		    </select></p>
+		<p><b>Desired Event Start Time:</b><br/>
+		    <select name="DesiredStartTime">
+			<option selected="selected">No Preference</option>
+			<option>Morning</option>
+			<option>Early Afternoon</option>
+			<option>Late</option>
+			<option>10:00 AM</option>
+			<option>10:30 AM</option>
+			<option>11:00 AM</option>
+			<option>11:30 AM</option>
+			<option>12:00 PM</option>
+			<option>12:30 PM</option>
+			<option>1:00 PM</option>
+			<option>1:30 PM</option>
+			<option>2:00 PM</option>
+			<option>2:30 PM</option>
+			<option>3:00 PM</option>
+			<option>3:30 PM</option>
+			<option>4:00 PM</option>
+			<option>4:30 PM</option>
+			<option>5:00 PM</option>
+			<option>5:30 PM</option>
+			<option>6:00 PM</option>
+			<option>6:30 PM</option>
+			<option>7:00 PM</option>
+			<option>7:30 PM</option>
+			<option>8:00 PM</option>
+			<option>8:30 PM</option>
+		    </select></p><br/>
+		    <h2>Event Requirements:</h2>
+		    <p><b>Required A/V Equipment:</b><br/>
+			<input name="ProjectorLaptop" type="checkbox" value="yes"/>Projector with Laptop input<br/>
+			<input name="ProjectorDVD" type="checkbox" value="yes"/>Projector with DVD Player<br/>
+			<input name="AdditionalPowerOutlets" type="checkbox" value="yes"/>Additional Power Outlets<br/>
+			<input name="SpecialAV" type="checkbox" value="yes"/>Other A/V Requirements</p>
+			<p><b>Special A/V Requests (Optional):</b><br/>
+			    (If you selected more than additional power outlets, or other A/V Requirements, you may not leave this blank)<br/>
+			    <textarea name="ExtraAVRequests" rows="12" cols="80"></textarea></p>
+			<p><b>Room Safety Requirements:</b><br/>
+			    <input name="ChildrenSupervised" type="checkbox" value="yes"/>Children under 12 who are attending the event must be supervised.<br/>
+			    <input name="NoFoodDrink" type="checkbox" value="yes"/>No open food or drink allowed in the room during the event.</p>
+			    <p><b>Additional Moderator Badge Requirements:</b><br/>
+				NOTE: Moderators automatically get one badge for themselves.<br/>
+				(If the event moderator(s) is/are not Stevens faculty or students, and so would normally have to pay for convention attendance, please use this option to request free moderator badges.)<br/>
+				<select name="FreeBadges">
+				    <option seklected="selected">1 badge</option>
+				    <option>2 badges</option>
+				    <option>3 badges</option>
+				</select></p>
+			    <p><b>Other Requests (Optional):</b><br/>
+				(If there are other requirements for the event, such as an attendance limit, specific attendee seating arrangements, a cleanup that exceeds 30 minutes, etc, please specify them here.)<br/>
+				<textarea name="ExtraRequests" rows="10" cols="80"></textarea></p>
+			    <p><b>Other Comments (Optional):</b><br/>
+				<textarea name="OtherComments" rows="5" cols="80"></textarea></p>
+			    <?php echo recaptcha_get_html($captcha_public); ?>
+			    <input type="submit" value="Submit"/>
+</form>
