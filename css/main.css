@@ -1,354 +1,292 @@
-/* MailChimp Form Embed Code - Slim - 08/17/2011 */
-#cpac_mailing_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
-#cpac_mailing_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
-#cpac_mailing_signup input {border:1px solid #999; -webkit-appearance:none;}
-#cpac_mailing_signup input[type=checkbox]{-webkit-appearance:checkbox;}
-#cpac_mailing_signup input[type=radio]{-webkit-appearance:radio;}
-#cpac_mailing_signup input:focus {border-color:#333;}
-#cpac_mailing_signup .button {clear:both; background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
-#cpac_mailing_signup .button:hover {background-color:#777;}
-#cpac_mailing_signup .small-meta {font-size: 11px;}
-#cpac_mailing_signup .nowrap {white-space:nowrap;}     
-#cpac_mailing_signup .clear {clear:none; display:inline;}
-
-#cpac_mailing_signup label {display:block; font-size:15px; padding-bottom:10px; font-weight:bold;}
-#cpac_mailing_signup input.email {padding:8px 0; margin:0 1% 10px 0; text-indent:5px; width:38%; min-width:130px;}
-#cpac_mailing_signup input.button {margin:0 0 10px 0; min-width:90px;}
-
-#cpac_mailing_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
-#cpac_mailing_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
-#cpac_mailing_signup #mce-error-response {display:none;}
-#cpac_mailing_signup #mce-success-response {color:#529214; display:none;}
-#cpac_mailing_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
-
-/*
-	Castle Point Anime Convention
-	Website Layout - v.3.0
-	for 2011
-	by Caroline Amaba
-*/
-
-html {
-	height: 100%;
-	width: 100%;
-}
-
+/* General styling */
 body {
-	background-color: #555;
-	color: #363636;
-	font-size: 10pt;
-	font-family: Tahoma, Verdana, Arial, sans-serif;
-	line-height: 14pt;
-	height: 100%;
-	margin: 0 auto;
+  background-color: #555;
+  color: #363636;
+  font-size: 10pt;
+  font-family: Tahoma, Verdana, Arial, sans-serif;
+  line-height: 14pt;
+  height: 100%;
 }
 
 p, ul {
-	margin: 0 0 15px 0;
+  margin: 0 0 15px 0;
 }
 
 a {
-	color: #cc0000;
-	font-weight: bold;
-	text-decoration: none;
+  color: #cc0000;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: underline;
-}
-
-dt {
-	text-decoration: underline;
-}
-
-dt::after {
-	content: ": ";
-	text-decoration: none;
-	display: inline-block;
-}
-
-#container {
-	background-color: #fff;
-	background-image: url('/img/content.jpg');
-	background-repeat: no-repeat;
-	background-position: center bottom;
-	min-height: 185px;
-	margin: 0 auto;
-	padding: 0 0 85px 0;
-	width: 1020px;
-}
-
-/* Header Image */
-#container .top {
-	display: inline;
-	float: left;
-	height: 261px;
-	margin: 0 auto 0 0;
-	padding: 0;
-	position: relative;
-	width: 1020px;
-
-}
-
-/* Navigation */
-#container #nav {
-	background-image: url('/img/nav.jpg');
-	background-position: center top;
-	background-repeat: no-repeat;
-	color: #fff;
-	display: inline;
-	float: left;
-	font-family: Tahoma, Verdana, Arial;
-	font-size: 5pt;
-	font-weight: bold;
-	height: 111px;
-	letter-spacing: 2pt;
-	margin: 0 auto 0 0;
-	padding: 23px 0 0 0;
-	text-align: left;
-	text-transform: lowercase;
-	width: 1020px;
-}
-
-#container #nav span {
-	display:inline;
-	float: left;
-	margin: 0 10px 0 0;
-	padding: 0 0 0 255px;
-	position: relative;
-}
-
-#container #nav span a, .container #nav  span a:hover {
-	color: #fff;
-	font-family: Tahoma, Verdana, Arial;
-	font-size: 13pt;
-	padding: 0 5px 0 5px;
-	text-decoration: none;
-}
-
-#container #nav span a:hover { color: #000; }
-
-	/* Content Area */
-#container #content
-{
-	clear: both;
-	display: inline;
-	float: left;
-	font-size: 10pt;
-	margin: 0 10px 100px 10px;
-	position: relative;
-	text-align: left;
-	width: 1000px;
-}
-
-#container #content #left
-{
-	display:inline;
-	float: left;
-	margin: 0 10px 0 0;
-	padding: 0 10px 0 30px;
-	position: relative;
-	width: 660px;
-}
-
-#container #content #left h1 {
-	border-bottom: 1px solid #000;
-	color: #333;
-	display: block;
-	font-size: 12pt;
-	font-weight: bold;
-	letter-spacing: 2pt;
-	margin-bottom: 10px;
-	padding: 10px 0 10px 0;
-	text-align: left;
-	width: 100%;
-}
-
-#container #content #left header {
-	margin-bottom: 20px;
-}
-
-#container #content #left header .subheading {
-	font-size: 12pt;
-	font-style: italic;
-}
-
-#container #content #left .staff-pic {
-	padding-left: 10px;
-	float: right;
-}
-
-#container #content #left h2 {
-	margin-bottom: 10px;
-}
-
-#container #content #rightbar
-{
-	border-left: 1px dashed #bbb;
-	display: inline;
-	float: left;
-	margin: 0 0 0 0px;
-	padding: 0 0 0 20px;
-	position: relative;
-	width: 225px;
-}
-
-#container #content .reg-frame {
-	overflow: hidden;
-	position: relative;
-	height: 710px;
-}
-
-#container #content iframe {
-	height: 100%;
-	width: 100%;
-	border: 0px none;
-}
-
-#container #content .reg-frame > iframe {
-	position: absolute;
-	top: -230px;
-	height: 937px;
-	scrolling: no;
-}
-
-#rightbar .frame {
-	display: inline;
-	float: left;
-	margin: 0 10px 0 0;
-	position: relative;
-	width: 235px;
-}
-
-/* footer */
-#case {
-	background-color: #fff;
-	min-height: 100%;
-	margin: 0 auto;
-	position: relative;
-	width: 1020;
-}
-
-#case #footer {
-	color: #777;
-	display:inline;
-	float: left;
-	font-size: 8pt;
-	line-height: 11pt;
-	margin: 0 auto;
-	padding: 20px 0 50px 0;
-	position: relative;
-	width: 1000px;
-}
-
-#case #footer a {
-	color: #999999;
-	font-weight: normal;
-	text-decoration: none;
-}
-
-#case #footer a:hover {
-	color: #666666;
-}
-
-#case #footer .toel, 
-#case #footer .toemid, 
-#case #footer .toer {
-	display: inline;
-	float: left;
-	position: relative;
-	padding-left: 15px;
-	text-align: left;
-	width: 300px;
-}
-
-.toel .col, .toemid .col, .toer .col {
-	display: inline;
-	float: left;
-	padding: 0 10px 0 0;
-	width: 45%;
-}
-
-#case #footer .toel {
-	margin: 0 0 0 10px;	
-	padding-left: 30px;
-}
-
-#case #footer .toemid {
-	border-left: 1px dashed #bbb;
-	border-right: 1px dashed #bbb;
-	margin: 0 10px 0 9x;
-	padding-right: 10px;
-}
-
-#case #footer .toer {
-	border: none;
-	margin: 0 10px 0 0;
-}
-
-.toel a, .toer a {
-	display: block;
-	font-weight: normal;
-}
-
-.toel a.nobr, .toer a.nobr {
-	display: inline;
-	font-weight: normal;
-}
-
-/* clear stuff */
-
-.clear {
-	clear: both;
-	display: block;
-	overflow: hidden;
-	visibility: hidden;
-	width: 0;
-	height: 0;
-}
-
-/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
-
-.header-float {
-	float: left;
-}
-
-.clearfix:after {
-	clear: both;
-	content: ' ';
-	display: block;
-	font-size: 0;
-	line-height: 0;
-	visibility: hidden;
-	width: 0;
-	height: 0;
-}
-
-.clearfix {
-	display: inline-block;
-}
-
-* html .clearfix {
-	height: 1%;
-}
-
-.clearfix {
-	display: block;
-}
-
-#rightbar img {
-    display: block;
-    margin: auto;
+  text-decoration: underline;
 }
 
 p img {
   float:left;
-	margin: 5px 10px 0px 5px;
-	border: 3px solid #333;
+  margin: 5px 10px 0px 5px;
+  border: 3px solid #333;
 }
 
 blockquote {
-    margin-left: 50px;
-    margin-right: 50px;
-    font-style: oblique;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-style: oblique;
+}
+
+dt {
+  text-decoration: underline;
+}
+
+dt::after {
+  content: ": ";
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+/* Layout of the page */
+
+#container {
+  background-color: #fff;
+  background-image: url('/img/content.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  min-height: 185px;
+  padding: 0 0 85px 0;
+  width: 1020px;
+}
+
+/* Header Image */
+#container .top {
+  float: left;
+  width: 1020px;
+}
+
+/* Navigation */
+#container #nav {
+  background-image: url('/img/nav.jpg');
+  background-position: center top;
+  background-repeat: no-repeat;
+  float: left;
+  font-size: 5pt;
+  font-weight: bold;
+  height: 111px;
+  letter-spacing: 2pt;
+  padding: 23px 0 0 0;
+  text-transform: lowercase;
+  width: 1020px;
+}
+
+#container #nav span {
+  padding: 0 0 0 255px;
+}
+
+#container #nav span a,
+.container #nav span a:hover {
+  color: #fff;
+  font-size: 13pt;
+  padding: 0 5px 0 5px;
+}
+
+#container #nav span a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* content */
+#container #content
+{
+  float: left;
+  margin: 0 10px 100px 10px;
+}
+
+#container #content #left
+{
+  float: left;
+  margin: 0 10px 0 0;
+  padding: 0 10px 0 30px;
+  width: 660px;
+}
+
+#container #content #left h1 {
+  border-bottom: 1px solid #000;
+  color: #333;
+  font-size: 12pt;
+  font-weight: bold;
+  letter-spacing: 2pt;
+  margin-bottom: 10px;
+  padding: 10px 0 10px 0;
+}
+
+#container #content #left header {
+  margin-bottom: 20px;
+}
+
+#container #content #left header .subheading {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+#container #content #left .staff-pic {
+  padding-left: 10px;
+  float: right;
+}
+
+#container #content #left h2 {
+  margin-bottom: 10px;
+}
+
+#container #content #rightbar
+{
+  border-left: 1px dashed #bbb;
+  float: left;
+  padding: 0 0 0 20px;
+}
+
+#container #content .reg-frame {
+  overflow: hidden;
+  position: relative;
+  height: 710px;
+}
+
+#container #content iframe {
+  height: 100%;
+  width: 100%;
+  border: 0px none;
+}
+
+#container #content .reg-frame > iframe {
+  position: absolute;
+  top: -230px;
+  height: 937px;
+  scrolling: no;
+}
+
+/* right bar */
+#rightbar .frame {
+  width: 100%;
+}
+
+#rightbar img {
+  display: block;
+  margin: auto;
+}
+
+/* footer */
+#case {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1020px;
+}
+
+#case #footer {
+  color: #777;
+  font-size: 8pt;
+  line-height: 11pt;
+  padding: 20px 0 50px 0;
+  margin-left: 30px;
+}
+
+#case #footer a {
+  color: #999;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+#case #footer a:hover {
+  color: #666;
+}
+
+#case #footer .toel,
+#case #footer .toemid,
+#case #footer .toer {
+  float: left;
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 300px;
+}
+
+.toel .col,
+.toemid .col,
+.toer .col {
+  float: left;
+  padding: 0 10px 0 0;
+  width: 45%;
+}
+
+#case #footer .toemid {
+  border-left: 1px dashed #bbb;
+  border-right: 1px dashed #bbb;
+}
+
+.toel a, .toer a {
+  display: block;
+  font-weight: normal;
+}
+
+.toel a.nobr, .toer a.nobr {
+  display: inline;
+  font-weight: normal;
+}
+
+
+/* Social widgets */
+
+.header-float {
+  float: left;
+  width: 470px;
+}
+
+#cpac_mailing_signup label {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#cpac_mailing_signup .button {
+  background-color:  #aaa;
+  border: 0 none;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+  height: 32px;
+  text-align: center;
+}
+
+#cpac_mailing_signup .button:hover {
+  background-color: #777;
+}
+
+#cpac_mailing_signup input.email {
+  padding: 8px 0;
+  margin: 0 1% 10px 0;
+  text-indent: 5px;
+  width: 38%;
+  min-width: 130px;
+  border: 1px solid #999;
+}
+
+#cpac_mailing_signup input.email:focus {
+  border-color: #333;
+}
+
+.fb-like-box {
+  float: right;
+}
+
+/* http://perishablepress.com/press/2008/02/05/lessons-learned-concerning-the-clearfix-css-hack */
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+}
+
+* html .clearfix {
+  height: 1%;
 }
