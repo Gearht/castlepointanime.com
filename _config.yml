@@ -1,13 +1,12 @@
 # Site settings
 title: Castle Point Anime Convention
 email: info@castlepointanime.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
+description: >
+  Castle Point Anime Convention is run by Stevens' Anime Club and
+  student volunteers. It has been a yearly event since it started
+  Spring 2008.
+baseurl: ""
 url: "http://www.castlepointanime.com"
-twitter_username: CastlePointCon
 
 # Build settings
 markdown: kramdown

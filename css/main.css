@@ -6,6 +6,7 @@ body {
   font-family: Tahoma, Verdana, Arial, sans-serif;
   line-height: 14pt;
   height: 100%;
+  margin-top: 0px;
 }
 
 p, ul {
@@ -60,6 +61,7 @@ dt::after {
 /* Header Image */
 #container .top {
   float: left;
+  height: 261px;
   width: 1020px;
 }
 
@@ -95,12 +97,6 @@ dt::after {
 }
 
 /* content */
-#container #content
-{
-  float: left;
-  margin: 0 10px 100px 10px;
-}
-
 #container #content #left
 {
   float: left;
@@ -147,7 +143,7 @@ dt::after {
 #container #content .reg-frame {
   overflow: hidden;
   position: relative;
-  height: 710px;
+  height: 750px;
 }
 
 #container #content iframe {
@@ -158,16 +154,13 @@ dt::after {
 
 #container #content .reg-frame > iframe {
   position: absolute;
-  top: -230px;
+  top: -269px;
   height: 937px;
-  scrolling: no;
+  min-width: 320px;
+  width: 660px;
 }
 
 /* right bar */
-#rightbar .frame {
-  width: 100%;
-}
-
 #rightbar img {
   display: block;
   margin: auto;
@@ -230,9 +223,7 @@ dt::after {
   font-weight: normal;
 }
 
-
 /* Social widgets */
-
 .header-float {
   float: left;
   width: 470px;
