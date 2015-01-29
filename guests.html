@@ -2,33 +2,31 @@
 layout: default
 ---
 
-<h1>Guest Appearances</h1>
-<h2>Mike Pollock</h2>
-<p>
-    <img style="float: left" src="guests/mike pollock.jpg" width="150px" />
-    "Mike Pollock is one of New York's premier voice actors.Saturday
-    morning cartoon enthusiasts might recognize him as Meat in
-    Ultimate Muscle: The Kinnikuman Legacy, Garbageman in the Teenage
-    Mutant Ninja Turtles, or as both the Mayor and ""Samo"" the
-    bartender in Kirby: Right Back At Ya!.
-</p>
-<p>
-    Anime fans might recognize him as the narrator for Pokémon from
-    2003 to 2013, Adon in Beserk: The Golden Age Arc II, or as Neppo
-    in Welcome to the Space Show.
-</p>
-<p>
-    He has also voiced Dr. Eggman and Ella in Sonic X and the Sonic the
-    Hedgehog video games, Bigoriki in Gororiki, and Langston Lickatoad in
-    Viva Piñata. Other places he's been are Yu-Gi-Oh! GX as Bonaparte, and
-    the Marvel Motion comic adaptation of Astonishing X-Men as Beast.
+{% if site.categories.guests | size > 0 %}
+<section>
+    <h1>Guest Appearances</h1>
 
-    Residing close to home here in the New York area, and having been a
-    guest of honor at CPAC previously in 2011, we are happy to welcome him
-    back again this year."
-</p>
+    {% for post in site.categories.guests %}
+    <article>
+	<h2>{{ post.guest_name }}</h2>
+	{{ post.content }}
+    </article>
 
-<div style="clear: both"></div>
-<!--
-<h1>Featured Panels</h1>
--->
+    <div style="clear: both"></div>
+    {% endfor %}
+</section>
+{% endif %}
+{% if site.categories.featured_panels | size > 0 %}
+<section>
+    <h1>Featured Panels</h1>
+
+    {% for post in site.categories.featured_panels %}
+    <article>
+	<h2>{{ post.guest_name }}</h2>
+	{{ post.content }}
+    </article>
+
+    <div style="clear: both"></div>
+    {% endfor %}
+</section>
+{% endif %}
