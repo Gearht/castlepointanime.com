@@ -50,7 +50,7 @@ dt::after {
 
 #container {
   background-color: #fff;
-  background-image: url('/img/content.jpg');
+  background-image: url('/images/content.jpg');
   background-repeat: no-repeat;
   background-position: center bottom;
   min-height: 185px;
@@ -67,7 +67,7 @@ dt::after {
 
 /* Navigation */
 #container #nav {
-  background-image: url('/img/nav.jpg');
+  background-image: url('/images/nav.jpg');
   background-position: center top;
   background-repeat: no-repeat;
   float: left;

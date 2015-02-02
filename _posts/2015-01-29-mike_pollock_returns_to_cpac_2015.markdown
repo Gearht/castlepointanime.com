@@ -5,7 +5,7 @@ date: "2015-01-29 00:07:31 -0500"
 category: guests
 guest_name: Mike Pollock
 ---
-<img src="/img/guests/mike_pollock.jpg" alt="Mike Pollock" height="150" />
+<img src="/images/guests/mike_pollock.jpg" alt="Mike Pollock" height="150" />
 "Mike Pollock is one of New York's premier voice actors.Saturday
 morning cartoon enthusiasts might recognize him as Meat in
 Ultimate Muscle: The Kinnikuman Legacy, Garbageman in the Teenage
