@@ -149,6 +149,7 @@ dt::after {
 #container #content iframe {
   height: 100%;
   width: 100%;
+  min-height: 800px;
   border: 0px none;
 }
 
